@@ -18,11 +18,27 @@
   padding: 0 1em;
 }
 
-.footer {
-  font-size: 13px;
+.about, .footer {
   border-top: 1px solid #dbdbdb;
   padding-top: 36px;
   margin-top: 36px;
+}
+
+.about {
+  font-size: 16px;
+  color: #555;
+}
+
+.about a {
+  text-decoration: underline;
+}
+
+.about a:hover, .about a:focus {
+  text-decoration: none;
+}
+
+.footer {
+  font-size: 13px;
 }
 
 .header {
@@ -54,6 +70,21 @@
 
 .options-page .radio + .radio {
   margin-left: 24px;
+}
+
+.content a:not(.button),
+.content a:link:not(.button),
+.content a:active:not(.button),
+.content a:visited:not(.button) {
+  color: #6164ae;
+  border-bottom: none;
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+
+.content a:hover:not(.button),
+.content a:focus:not(.button) {
+  color: #a56824;
 }
 
 .footer a:not(.icon):hover, .footer a:visited:not(.icon):hover {
