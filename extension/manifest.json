@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Sounds of GitHub",
+  "short_name": "Sounds of GitHub",
+  "description": "Play a sound effect when you leave a reaction on GitHub.",
+  "version": "0.0.1",
+  "permissions": [
+    "storage", "tabs", "*://*.github.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": ["icon128.png"]
+}
