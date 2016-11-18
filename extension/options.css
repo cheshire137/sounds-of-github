@@ -55,3 +55,7 @@
 .options-page .radio + .radio {
   margin-left: 24px;
 }
+
+.footer a:not(.icon):hover, .footer a:visited:not(.icon):hover {
+  border-bottom-color: #7e80cf;
+}
