@@ -59,3 +59,24 @@
 .footer a:not(.icon):hover, .footer a:visited:not(.icon):hover {
   border-bottom-color: #7e80cf;
 }
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 500px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 8px;
+  height: 7px;
+  border: 1px solid #bdc3c7;
+  background-color: #fff;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #a6a5df;
+  border: 1px solid #7e80cf;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
