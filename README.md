@@ -19,4 +19,4 @@ Blizzard. I claim no ownership of them, I'm just a fan. :heart:
 
 - [Howler.js](https://github.com/goldfire/howler.js) - audio library
 - [Bulma](http://bulma.io/documentation/elements/form/) - CSS framework
-- [milk-syrup](http://milk-syrup.tumblr.com/bastion) - Bastion sound effects
+- milk-syrup for extracted [Bastion](http://milk-syrup.tumblr.com/bastion) and [D.Va](http://milk-syrup.tumblr.com/d.va) sound effects

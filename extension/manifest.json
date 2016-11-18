@@ -33,6 +33,13 @@
     "sounds/bastion-hooray.mp3",
     "sounds/bastion-confused.mp3",
     "sounds/bastion-unreact.mp3",
+    "sounds/dva-heart.mp3",
+    "sounds/dva-+1.mp3",
+    "sounds/dva--1.mp3",
+    "sounds/dva-laugh.mp3",
+    "sounds/dva-hooray.mp3",
+    "sounds/dva-confused.mp3",
+    "sounds/dva-unreact.mp3",
     "icon128.png"
   ]
 }

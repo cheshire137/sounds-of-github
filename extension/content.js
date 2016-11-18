@@ -19,6 +19,16 @@
     unreact: chrome.extension.getURL('sounds/bastion-unreact.mp3'),
   }
 
+  const dvaSounds = {
+    heart: chrome.extension.getURL('sounds/dva-heart.mp3'),
+    '+1': chrome.extension.getURL('sounds/dva-+1.mp3'),
+    '-1': chrome.extension.getURL('sounds/dva--1.mp3'),
+    laugh: chrome.extension.getURL('sounds/dva-laugh.mp3'),
+    hooray: chrome.extension.getURL('sounds/dva-hooray.mp3'),
+    confused: chrome.extension.getURL('sounds/dva-confused.mp3'),
+    unreact: chrome.extension.getURL('sounds/dva-unreact.mp3'),
+  }
+
   class SoundsOfGitHub {
     constructor(volume, soundPack) {
       this.volume = volume || '0.5'
@@ -31,6 +41,9 @@
       }
       if (this.soundPack === 'overwatch-bastion') {
         return bastionSounds[type]
+      }
+      if (this.soundPack === 'overwatch-dva') {
+        return dvaSounds[type]
       }
       return null
     }
