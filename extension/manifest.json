@@ -19,12 +19,12 @@
   },
   "web_accessible_resources": [
     "sounds/mario-coin.mp3",
-    "sounds/mario-fireball.mp3",
+    "sounds/mario-fireball.wav",
     "sounds/mario-gift.mp3",
-    "sounds/mario-kick.mp3",
+    "sounds/mario-kick.wav",
     "sounds/mario-one-up.mp3",
     "sounds/mario-stamp.mp3",
-    "sounds/mario-pause.mp3",
+    "sounds/mario-pause.wav",
     "icon128.png"
   ]
 }
