@@ -7,17 +7,25 @@
   const stamp = chrome.extension.getURL('sounds/mario-stamp.mp3')
   const pause = chrome.extension.getURL('sounds/mario-pause.wav')
 
-  const soundSources = {
+  const marioSounds = {
     heart: oneUp,
     '+1': coin,
     '-1': fireball,
     laugh: stamp,
     hooray: gift,
     confused: pause,
+    unreact: kick,
   }
 
-  function playSound(src) {
-    const sound = new Howl({ src, volume: 0.5 })
+  function getSource(type, soundPack) {
+    if (soundPack === 'mario') {
+      return marioSounds[type]
+    }
+    return null
+  }
+
+  function playSound(src, volume) {
+    const sound = new Howl({ src, volume })
     sound.play()
   }
 
@@ -26,25 +34,33 @@
     return type.split(' ')[0].toLowerCase()
   }
 
-  function addReaction(event) {
+  function addReaction(event, volume, soundPack) {
     const button = event.currentTarget
     const type = getReactionType(button)
-    const source = soundSources[type]
+    const source = getSource(type, soundPack)
     if (source) {
-      playSound(source)
+      playSound(source, volume)
     }
   }
 
-  function removeReaction(event) {
-    playSound(kick)
+  function removeReaction(volume, soundPack) {
+    const source = getSource('unreact', soundPack)
+    if (source) {
+      playSound(source, volume)
+    }
   }
 
-  // Add reaction
-  $('body').on('click', '.js-reaction-option-item', addReaction)
-  $('body').on('click',
-               'button.reaction-summary-item:not(.user-has-reacted):not(.add-reaction-btn)',
-               addReaction)
+  SoundsOfGitHubStorage.load().then(options => {
+    const volume = options.volume || '0.5'
+    const soundPack = options.soundPack || 'mario'
 
-  // Remove reaction
-  $('body').on('click', 'button.user-has-reacted', removeReaction)
+    // Add reaction
+    $('body').on('click', '.js-reaction-option-item', e => addReaction(e, volume, soundPack))
+    $('body').on('click',
+                 'button.reaction-summary-item:not(.user-has-reacted):not(.add-reaction-btn)',
+                 e => addReaction(e, volume, soundPack))
+
+    // Remove reaction
+    $('body').on('click', 'button.user-has-reacted', () => removeReaction(volume, soundPack))
+  })
 })()
