@@ -3,7 +3,6 @@
   background-repeat: no-repeat;
   line-height: 48px;
   padding-left: 58px;
-  margin-bottom: 36px;
 }
 
 .options-page {
@@ -21,4 +20,13 @@
 
 .footer {
   font-size: 13px;
+  border-top: 1px solid #dbdbdb;
+  padding-top: 36px;
+  margin-top: 36px;
+}
+
+.header {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 36px;
+  margin-bottom: 36px;
 }

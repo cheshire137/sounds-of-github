@@ -10,8 +10,8 @@ class OptionsPage {
   }
 
   getManifest() {
-    const url = chrome.extension.getURL('manifest.json');
-    return window.fetch(url).then(response => response.json());
+    const url = chrome.extension.getURL('manifest.json')
+    return window.fetch(url).then(response => response.json())
   }
 
   setup() {
