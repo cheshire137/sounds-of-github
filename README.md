@@ -11,3 +11,8 @@ the best :ok_hand: :100: sounds for each reaction.
 1. Visit `chrome://extensions/` in Chrome.
 1. Enable "Developer mode".
 1. Click "Load unpacked extension..." and choose the extension/ directory of this repository.
+
+## Thanks
+
+- [Howler.js](https://github.com/goldfire/howler.js) - audio library
+- [Bulma](http://bulma.io/documentation/elements/form/) - CSS framework
