@@ -30,9 +30,10 @@
   }
 
   class SoundsOfGitHub {
-    constructor(volume, soundPack) {
+    constructor(volume, soundPack, unreactSound) {
       this.volume = volume || '0.5'
       this.soundPack = soundPack || 'mario'
+      this.unreactSound = typeof unreactSound === 'undefined' ? true : unreactSound
     }
 
     getSource(type) {
@@ -78,6 +79,9 @@
     }
 
     removeReaction() {
+      if (!this.unreactSound) {
+        return
+      }
       const source = this.getSource('unreact')
       if (source) {
         this.playSound(source)
@@ -86,7 +90,11 @@
   }
 
   SoundsOfGitHubStorage.load().then(options => {
-    const soundsOfGitHub = new SoundsOfGitHub(options.volume, options.soundPack)
+    let unreactSound = true
+    if (options.unreactSound === 'no') {
+      unreactSound = false
+    }
+    const soundsOfGitHub = new SoundsOfGitHub(options.volume, options.soundPack, unreactSound)
 
     // Add reaction
     $('body').on('click', '.js-reaction-option-item', e => soundsOfGitHub.addReaction(e))

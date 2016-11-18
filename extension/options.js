@@ -8,6 +8,8 @@ class OptionsPage {
     this.soundPackMenu = document.getElementById('sound-pack')
     this.versionEl = document.getElementById('extension-version')
     this.successEl = document.getElementById('save-message')
+    this.unreactSoundYes = document.getElementById('unreact-sound-yes')
+    this.unreactSoundNo = document.getElementById('unreact-sound-no')
   }
 
   getManifest() {
@@ -20,9 +22,19 @@ class OptionsPage {
       this.options = options
       this.setSelectedVolume()
       this.setSelectedSoundPack()
+      this.setUnreactSoundSelection()
       this.listenForChanges()
     })
     this.getManifest().then(this.showExtensionVersion.bind(this))
+  }
+
+  setUnreactSoundSelection() {
+    const unreactSound = this.options.unreactSound || 'yes'
+    if (unreactSound === 'yes') {
+      this.unreactSoundYes.checked = true
+    } else {
+      this.unreactSoundNo.checked = true
+    }
   }
 
   showExtensionVersion(manifest) {
@@ -46,11 +58,14 @@ class OptionsPage {
   listenForChanges() {
     this.volumeSlider.addEventListener('change', () => this.saveOptions())
     this.soundPackMenu.addEventListener('change', () => this.saveOptions())
+    this.unreactSoundYes.addEventListener('change', () => this.saveOptions())
+    this.unreactSoundNo.addEventListener('change', () => this.saveOptions())
   }
 
   saveOptions() {
     this.options.volume = this.volumeSlider.value
     this.options.soundPack = this.soundPackMenu.value
+    this.options.unreactSound = this.unreactSoundYes.checked ? 'yes' : 'no'
     SoundsOfGitHubStorage.save(this.options).then(() => {
       this.successEl.style.opacity = 1
       setTimeout(() => {
