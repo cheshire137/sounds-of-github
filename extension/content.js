@@ -29,7 +29,10 @@
   function addReaction(event) {
     const button = event.currentTarget
     const type = getReactionType(button)
-    playSound(soundSources[type])
+    const source = soundSources[type]
+    if (source) {
+      playSound(source)
+    }
   }
 
   function removeReaction(event) {
