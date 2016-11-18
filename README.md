@@ -4,6 +4,8 @@ This is a Chrome extension to play sound effects whenever you leave a reaction o
 :thumbsup: :thumbsdown: :smile: :tada: :confused: :heart: Thanks to
 [@shayfrendt](https://github.com/shayfrendt) for the inspiration.
 
+Choose from Super Mario, Overwatch Bastion, and Overwatch D.Va sound effects!
+
 ## How to Develop
 
 1. Clone this repository: `git clone https://github.com/cheshire137/sounds-of-github.git`
