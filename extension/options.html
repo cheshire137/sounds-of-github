@@ -10,26 +10,24 @@
   </head>
   <body class="options-page">
     <div class="container">
+      <div class="notification is-success" id="save-message">
+        Saved your options!
+      </div>
       <header class="header">
         <h1 class="title">Sounds of GitHub Options</h1>
       </header>
-      <form class="options-form">
-        <div class="control">
-          <label for="volume" class="label">Volume of sound effects:</label>
-          0% 🔇 <input type="range" id="volume" min="0.0" max="1.0" step="0.1"> 🔊 100%
-        </div>
-        <div class="control">
-          <label for="sound-pack" class="label">Sound pack:</label>
-          <span class="select is-large">
-            <select id="sound-pack">
-              <option value="mario">Super Mario</option>
-            </select>
-          </span>
-        </div>
-        <button type="submit" class="button is-large is-primary">
-          Save Options
-        </button>
-      </form>
+      <div class="control">
+        <label for="volume" class="label">Volume of sound effects:</label>
+        0% 🔇 <input type="range" id="volume" min="0.0" max="1.0" step="0.1"> 🔊 100%
+      </div>
+      <div class="control">
+        <label for="sound-pack" class="label">Sound pack:</label>
+        <span class="select is-large">
+          <select id="sound-pack">
+            <option value="mario">Super Mario</option>
+          </select>
+        </span>
+      </div>
       <footer class="footer">
         &copy; 2016 <a href="http://sarahvessels.com/">Sarah Vessels</a>
         <span class="separator">&middot;</span>

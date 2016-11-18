@@ -7,6 +7,7 @@ class OptionsPage {
     this.volumeSlider = document.getElementById('volume')
     this.soundPackMenu = document.getElementById('sound-pack')
     this.versionEl = document.getElementById('extension-version')
+    this.successEl = document.getElementById('save-message')
   }
 
   getManifest() {
@@ -19,6 +20,7 @@ class OptionsPage {
       this.options = options
       this.setSelectedVolume()
       this.setSelectedSoundPack()
+      this.listenForChanges()
     })
     this.getManifest().then(this.showExtensionVersion.bind(this))
   }
@@ -39,6 +41,22 @@ class OptionsPage {
         break
       }
     }
+  }
+
+  listenForChanges() {
+    this.volumeSlider.addEventListener('change', () => this.saveOptions())
+    this.soundPackMenu.addEventListener('change', () => this.saveOptions())
+  }
+
+  saveOptions() {
+    this.options.volume = this.volumeSlider.value
+    this.options.soundPack = this.soundPackMenu.value
+    SoundsOfGitHubStorage.save(this.options).then(() => {
+      this.successEl.style.opacity = 1
+      setTimeout(() => {
+        this.successEl.style.opacity = 0
+      }, 1500)
+    })
   }
 }
 
