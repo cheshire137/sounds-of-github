@@ -46,3 +46,12 @@
 .options-page .radio {
   line-height: 20px;
 }
+
+.options-page .radio input[type="radio"] {
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+.options-page .radio + .radio {
+  margin-left: 24px;
+}
