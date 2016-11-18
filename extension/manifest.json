@@ -17,6 +17,7 @@
     "48": "icon48.png",
     "128": "icon128.png"
   },
+  "options_page": "options.html",
   "web_accessible_resources": [
     "sounds/mario-coin.mp3",
     "sounds/mario-fireball.wav",

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sounds of GitHub</title>
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body class="options-page">
+    <div class="container">
+      <h1 class="title">Sounds of GitHub Options</h1>
+      <form class="options-form">
+        <div class="control">
+          <label for="volume" class="label">Volume of sound effects:</label>
+          0% 🔇 <input type="range" id="volume" min="0.0" max="1.0" step="0.1" value="0.5"> 🔊 100%
+        </div>
+        <div class="control">
+          <label for="sound-pack" class="label">Sound pack:</label>
+          <span class="select is-large">
+            <select id="sound-pack">
+              <option value="mario">Super Mario</option>
+            </select>
+          </span>
+        </div>
+        <button type="submit" class="button is-large is-primary">
+          Save Options
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
