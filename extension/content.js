@@ -54,8 +54,18 @@
     }
 
     getReactionType(button) {
-      const type = button.getAttribute('data-reaction-label') || button.value
-      return type.split(' ')[0].toLowerCase()
+      let type = button.getAttribute('data-reaction-label') || button.value
+      type = type.split(' ')[0].toLowerCase()
+      if (type === 'smile') {
+        return 'laugh'
+      }
+      if (type === 'tada') {
+        return 'hooray'
+      }
+      if (type === 'thinking_face') {
+        return 'confused'
+      }
+      return type
     }
 
     addReaction(event) {
