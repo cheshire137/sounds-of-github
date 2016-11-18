@@ -9,6 +9,16 @@
     unreact: chrome.extension.getURL('sounds/mario-kick.wav'),
   }
 
+  const bastionSounds = {
+    heart: chrome.extension.getURL('sounds/bastion-heart.mp3'),
+    '+1': chrome.extension.getURL('sounds/bastion-+1.mp3'),
+    '-1': chrome.extension.getURL('sounds/bastion--1.mp3'),
+    laugh: chrome.extension.getURL('sounds/bastion-laugh.mp3'),
+    hooray: chrome.extension.getURL('sounds/bastion-hooray.mp3'),
+    confused: chrome.extension.getURL('sounds/bastion-confused.mp3'),
+    unreact: chrome.extension.getURL('sounds/bastion-unreact.mp3'),
+  }
+
   class SoundsOfGitHub {
     constructor(volume, soundPack) {
       this.volume = volume || '0.5'
@@ -18,6 +28,9 @@
     getSource(type) {
       if (this.soundPack === 'mario') {
         return marioSounds[type]
+      }
+      if (this.soundPack === 'overwatch-bastion') {
+        return bastionSounds[type]
       }
       return null
     }

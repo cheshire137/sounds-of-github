@@ -14,5 +14,9 @@ the best :ok_hand: :100: sounds for each reaction.
 
 ## Thanks
 
+The Mario sound effects belong to Nintendo and the Overwatch sound effects belong to
+Blizzard. I claim no ownership of them, I'm just a fan. :heart:
+
 - [Howler.js](https://github.com/goldfire/howler.js) - audio library
 - [Bulma](http://bulma.io/documentation/elements/form/) - CSS framework
+- [milk-syrup](http://milk-syrup.tumblr.com/bastion) - Bastion sound effects

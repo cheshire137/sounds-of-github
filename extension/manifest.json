@@ -26,6 +26,13 @@
     "sounds/mario-one-up.mp3",
     "sounds/mario-stamp.mp3",
     "sounds/mario-pause.wav",
+    "sounds/bastion-heart.mp3",
+    "sounds/bastion-+1.mp3",
+    "sounds/bastion--1.mp3",
+    "sounds/bastion-laugh.mp3",
+    "sounds/bastion-hooray.mp3",
+    "sounds/bastion-confused.mp3",
+    "sounds/bastion-unreact.mp3",
     "icon128.png"
   ]
 }
