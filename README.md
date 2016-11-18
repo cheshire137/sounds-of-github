@@ -6,6 +6,8 @@ This is a Chrome extension to play sound effects whenever you leave a reaction o
 
 Choose from Super Mario, Overwatch Bastion, and Overwatch D.Va sound effects!
 
+**[Install from the Chrome Web Store](https://chrome.google.com/webstore/detail/sounds-of-github/dahmkeokilolnpmidacepocehjjhbhnp?hl=en-US&gl=US)**
+
 ## How to Develop
 
 1. Clone this repository: `git clone https://github.com/cheshire137/sounds-of-github.git`
