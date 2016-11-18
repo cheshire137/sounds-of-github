@@ -6,8 +6,6 @@ This is a Chrome extension to play sound effects whenever you leave a reaction o
 
 Choose from Super Mario, Overwatch Bastion, and Overwatch D.Va sound effects!
 
-![screenshot of options](https://raw.githubusercontent.com/cheshire137/sounds-of-github/master/screenshot.png)
-
 ## How to Develop
 
 1. Clone this repository: `git clone https://github.com/cheshire137/sounds-of-github.git`
@@ -25,3 +23,9 @@ Thanks to and [@shayfrendt](https://github.com/shayfrendt) and [@rewinfrey](http
 - [Howler.js](https://github.com/goldfire/howler.js) - audio library
 - [Bulma](http://bulma.io/documentation/elements/form/) - CSS framework
 - milk-syrup for extracted [Bastion](http://milk-syrup.tumblr.com/bastion) and [D.Va](http://milk-syrup.tumblr.com/d.va) sound effects
+
+## Screenshots
+
+Options page:
+
+![screenshot of options](https://raw.githubusercontent.com/cheshire137/sounds-of-github/master/screenshot.png)
