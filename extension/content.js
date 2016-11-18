@@ -1,66 +1,64 @@
 (function() {
-  const coin = chrome.extension.getURL('sounds/mario-coin.mp3')
-  const fireball = chrome.extension.getURL('sounds/mario-fireball.wav')
-  const gift = chrome.extension.getURL('sounds/mario-gift.mp3')
-  const kick = chrome.extension.getURL('sounds/mario-kick.wav')
-  const oneUp = chrome.extension.getURL('sounds/mario-one-up.mp3')
-  const stamp = chrome.extension.getURL('sounds/mario-stamp.mp3')
-  const pause = chrome.extension.getURL('sounds/mario-pause.wav')
-
   const marioSounds = {
-    heart: oneUp,
-    '+1': coin,
-    '-1': fireball,
-    laugh: stamp,
-    hooray: gift,
-    confused: pause,
-    unreact: kick,
+    heart: chrome.extension.getURL('sounds/mario-one-up.mp3'),
+    '+1': chrome.extension.getURL('sounds/mario-coin.mp3'),
+    '-1': chrome.extension.getURL('sounds/mario-fireball.wav'),
+    laugh: chrome.extension.getURL('sounds/mario-stamp.mp3'),
+    hooray: chrome.extension.getURL('sounds/mario-gift.mp3'),
+    confused: chrome.extension.getURL('sounds/mario-pause.wav'),
+    unreact: chrome.extension.getURL('sounds/mario-kick.wav'),
   }
 
-  function getSource(type, soundPack) {
-    if (soundPack === 'mario') {
-      return marioSounds[type]
+  class SoundsOfGitHub {
+    constructor(volume, soundPack) {
+      this.volume = volume || '0.5'
+      this.soundPack = soundPack || 'mario'
     }
-    return null
-  }
 
-  function playSound(src, volume) {
-    const sound = new Howl({ src, volume })
-    sound.play()
-  }
-
-  function getReactionType(button) {
-    const type = button.getAttribute('data-reaction-label') || button.value
-    return type.split(' ')[0].toLowerCase()
-  }
-
-  function addReaction(event, volume, soundPack) {
-    const button = event.currentTarget
-    const type = getReactionType(button)
-    const source = getSource(type, soundPack)
-    if (source) {
-      playSound(source, volume)
+    getSource(type) {
+      if (this.soundPack === 'mario') {
+        return marioSounds[type]
+      }
+      return null
     }
-  }
 
-  function removeReaction(volume, soundPack) {
-    const source = getSource('unreact', soundPack)
-    if (source) {
-      playSound(source, volume)
+    playSound(src) {
+      const sound = new Howl({ src, volume: this.volume })
+      sound.play()
+    }
+
+    getReactionType(button) {
+      const type = button.getAttribute('data-reaction-label') || button.value
+      return type.split(' ')[0].toLowerCase()
+    }
+
+    addReaction(event) {
+      const button = event.currentTarget
+      const type = this.getReactionType(button)
+      const source = this.getSource(type)
+      if (source) {
+        this.playSound(source)
+      }
+    }
+
+    removeReaction() {
+      const source = this.getSource('unreact')
+      if (source) {
+        this.playSound(source)
+      }
     }
   }
 
   SoundsOfGitHubStorage.load().then(options => {
-    const volume = options.volume || '0.5'
-    const soundPack = options.soundPack || 'mario'
+    const soundsOfGitHub = new SoundsOfGitHub(options.volume, options.soundPack)
 
     // Add reaction
-    $('body').on('click', '.js-reaction-option-item', e => addReaction(e, volume, soundPack))
+    $('body').on('click', '.js-reaction-option-item', e => soundsOfGitHub.addReaction(e))
     $('body').on('click',
                  'button.reaction-summary-item:not(.user-has-reacted):not(.add-reaction-btn)',
-                 e => addReaction(e, volume, soundPack))
+                 e => soundsOfGitHub.addReaction(e))
 
     // Remove reaction
-    $('body').on('click', 'button.user-has-reacted', () => removeReaction(volume, soundPack))
+    $('body').on('click', 'button.user-has-reacted', () => soundsOfGitHub.removeReaction())
   })
 })()
