@@ -10,6 +10,7 @@ class OptionsPage {
     this.successEl = document.getElementById('save-message')
     this.unreactSoundYes = document.getElementById('unreact-sound-yes')
     this.unreactSoundNo = document.getElementById('unreact-sound-no')
+    this.volumeLevelEl = document.getElementById('volume-level')
   }
 
   getManifest() {
@@ -43,6 +44,11 @@ class OptionsPage {
 
   setSelectedVolume() {
     this.volumeSlider.value = this.options.volume || '0.5'
+    this.displayVolumeLevel()
+  }
+
+  displayVolumeLevel() {
+    this.volumeLevelEl.textContent = parseFloat(this.volumeSlider.value) * 100 + '%'
   }
 
   setSelectedSoundPack() {
@@ -56,7 +62,11 @@ class OptionsPage {
   }
 
   listenForChanges() {
-    this.volumeSlider.addEventListener('change', () => this.saveOptions())
+    this.volumeSlider.addEventListener('change', () => {
+      this.displayVolumeLevel()
+      this.saveOptions()
+      this.volumeSlider.blur()
+    })
     this.soundPackMenu.addEventListener('change', () => this.saveOptions())
     this.unreactSoundYes.addEventListener('change', () => this.saveOptions())
     this.unreactSoundNo.addEventListener('change', () => this.saveOptions())
