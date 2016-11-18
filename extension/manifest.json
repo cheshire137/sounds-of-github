@@ -17,5 +17,13 @@
     "48": "icon48.png",
     "128": "icon128.png"
   },
-  "web_accessible_resources": ["icon128.png"]
+  "web_accessible_resources": [
+    "sounds/mario-coin.mp3",
+    "sounds/mario-fireball.mp3",
+    "sounds/mario-gift.mp3",
+    "sounds/mario-kick.mp3",
+    "sounds/mario-one-up.mp3",
+    "sounds/mario-stamp.mp3",
+    "icon128.png"
+  ]
 }
