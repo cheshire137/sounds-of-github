@@ -14,3 +14,11 @@
 .options-page .control {
   margin-bottom: 36px;
 }
+
+.separator {
+  padding: 0 1em;
+}
+
+.footer {
+  font-size: 13px;
+}
