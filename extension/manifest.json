@@ -10,7 +10,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.github.com/*"],
-      "js": ["content.js"]
+      "js": ["howler.min.js", "content.js"]
     }
   ],
   "icons": {
