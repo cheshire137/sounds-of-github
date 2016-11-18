@@ -2,8 +2,7 @@
 
 This is a Chrome extension to play sound effects whenever you leave a reaction on GitHub.
 :thumbsup: :thumbsdown: :smile: :tada: :confused: :heart: Thanks to
-[@shayfrendt](https://github.com/shayfrendt) for the inspiration and hand selecting
-the best :ok_hand: :100: sounds for each reaction.
+[@shayfrendt](https://github.com/shayfrendt) for the inspiration.
 
 ## How to Develop
 
@@ -16,6 +15,8 @@ the best :ok_hand: :100: sounds for each reaction.
 
 The Mario sound effects belong to Nintendo and the Overwatch sound effects belong to
 Blizzard. I claim no ownership of them, I'm just a fan. :heart:
+
+Thanks to and [@shayfrendt](https://github.com/shayfrendt) and [@rewinfrey](https://github.com/rewinfrey) for helping me pick the best :ok_hand: :100: sounds for each reaction.
 
 - [Howler.js](https://github.com/goldfire/howler.js) - audio library
 - [Bulma](http://bulma.io/documentation/elements/form/) - CSS framework
