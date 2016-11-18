@@ -1,11 +1,16 @@
-.title {
+.options-page .title {
   background-image: url('chrome-extension://__MSG_@@extension_id__/icon48.png');
   background-repeat: no-repeat;
   line-height: 48px;
   padding-left: 58px;
+  margin-bottom: 36px;
 }
 
 .options-page {
   padding-top: 48px;
   font-size: 20px;
+}
+
+.options-page .control {
+  margin-bottom: 36px;
 }
