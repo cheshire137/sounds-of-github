@@ -54,6 +54,13 @@
     "sounds/orc-okay.wav",
     "sounds/orc-spell.wav",
     "sounds/orc-slo-boo.wav",
+    "sounds/alliance-all-right.wav",
+    "sounds/alliance-auch.wav",
+    "sounds/alliance-death.wav",
+    "sounds/alliance-invisibility.wav",
+    "sounds/alliance-okay.wav",
+    "sounds/alliance-right-o.wav",
+    "sounds/alliance-yes.wav",
     "icon128.png"
   ]
 }

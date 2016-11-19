@@ -4,8 +4,8 @@ This is a Chrome extension to play sound effects whenever you leave a reaction
 on GitHub. :thumbsup: :thumbsdown: :smile: :tada: :confused: :heart: Thanks to
 [@shayfrendt](https://github.com/shayfrendt) for the inspiration.
 
-Choose from Super Mario, The Legend of Zelda, Warcraft II orcs, Overwatch
-Bastion, and Overwatch D.Va sound effects!
+Choose from Super Mario, The Legend of Zelda, Warcraft II alliance,
+Warcraft II horde, Overwatch Bastion, and Overwatch D.Va sound effects!
 
 **[Install from the Chrome Web Store](https://chrome.google.com/webstore/detail/sounds-of-github/dahmkeokilolnpmidacepocehjjhbhnp?hl=en-US&gl=US)**
 
@@ -18,9 +18,9 @@ Bastion, and Overwatch D.Va sound effects!
 
 ## Thanks
 
-The Super Mario and Legend of Zelda sound effects belong to Nintendo and the
-Overwatch sound effects belong to Blizzard. I claim no ownership of them, I'm
-just a fan. :heart:
+The Super Mario and Legend of Zelda sound effects belong to Nintendo. The
+Overwatch and Warcraft II sound effects belong to Blizzard. I claim no ownership
+of them, I'm just a fan. :heart:
 
 Thanks to and [@shayfrendt](https://github.com/shayfrendt) and [@rewinfrey](https://github.com/rewinfrey) for helping me pick the best :ok_hand: :100: sounds for each reaction.
 
@@ -28,7 +28,7 @@ Thanks to and [@shayfrendt](https://github.com/shayfrendt) and [@rewinfrey](http
 - [Bulma](http://bulma.io/documentation/elements/form/) - CSS framework
 - milk-syrup for extracted [Bastion](http://milk-syrup.tumblr.com/bastion) and [D.Va](http://milk-syrup.tumblr.com/d.va) sound effects
 - [Legend of Zelda Sound Effects](http://noproblo.dayjo.org/ZeldaSounds/)
-- [Thanatos Realms](http://www.thanatosrealms.com/war2/horde-sounds) - Warcraft II sounds
+- Thanatos Realms for the [Warcraft II horde](http://www.thanatosrealms.com/war2/horde-sounds) and [Warcraft II alliance](http://www.thanatosrealms.com/war2/alliance-sounds) sounds
 
 ## Screenshots
 

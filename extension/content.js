@@ -49,6 +49,16 @@
     unreact: chrome.extension.getURL('sounds/orc-spell.wav'),
   }
 
+  const warcraftHumanSounds = {
+    heart: chrome.extension.getURL('sounds/alliance-okay.wav'),
+    '+1': chrome.extension.getURL('sounds/alliance-yes.wav'),
+    '-1': chrome.extension.getURL('sounds/alliance-death.wav'),
+    laugh: chrome.extension.getURL('sounds/alliance-all-right.wav'),
+    hooray: chrome.extension.getURL('sounds/alliance-right-o.wav'),
+    confused: chrome.extension.getURL('sounds/alliance-auch.wav'),
+    unreact: chrome.extension.getURL('sounds/alliance-invisibility.wav'),
+  }
+
   class SoundsOfGitHub {
     constructor(volume, soundPack, unreactSound) {
       this.volume = volume || '0.5'
@@ -71,6 +81,9 @@
       }
       if (this.soundPack === 'warcraft-orc') {
         return warcraftOrcSounds[type]
+      }
+      if (this.soundPack === 'warcraft-human') {
+        return warcraftHumanSounds[type]
       }
       return null
     }

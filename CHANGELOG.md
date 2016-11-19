@@ -2,7 +2,7 @@
 
 ## 0.0.3
 
-- Add Legend of Zelda and Warcraft II orcs sound packs.
+- Add Legend of Zelda, Warcraft II alliance, and Warcraft II horde sound packs.
 
 ## 0.0.2
 
