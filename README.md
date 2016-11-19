@@ -1,10 +1,11 @@
 # ![icon](extension/icon48.png) Sounds of GitHub
 
-This is a Chrome extension to play sound effects whenever you leave a reaction on GitHub.
-:thumbsup: :thumbsdown: :smile: :tada: :confused: :heart: Thanks to
+This is a Chrome extension to play sound effects whenever you leave a reaction
+on GitHub. :thumbsup: :thumbsdown: :smile: :tada: :confused: :heart: Thanks to
 [@shayfrendt](https://github.com/shayfrendt) for the inspiration.
 
-Choose from Super Mario, Overwatch Bastion, and Overwatch D.Va sound effects!
+Choose from Super Mario, The Legend of Zelda, Overwatch Bastion, and Overwatch
+D.Va sound effects!
 
 **[Install from the Chrome Web Store](https://chrome.google.com/webstore/detail/sounds-of-github/dahmkeokilolnpmidacepocehjjhbhnp?hl=en-US&gl=US)**
 
