@@ -47,6 +47,13 @@
     "sounds/zelda-rupee.wav",
     "sounds/zelda-sword-slash.wav",
     "sounds/zelda-text.wav",
+    "sounds/orc-confused.wav",
+    "sounds/orc-kaboom.wav",
+    "sounds/orc-laugh.wav",
+    "sounds/orc-death.wav",
+    "sounds/orc-okay.wav",
+    "sounds/orc-spell.wav",
+    "sounds/orc-slo-boo.wav",
     "icon128.png"
   ]
 }

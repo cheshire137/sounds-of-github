@@ -39,6 +39,16 @@
     unreact: chrome.extension.getURL('sounds/zelda-sword-slash.wav'),
   }
 
+  const warcraftOrcSounds = {
+    heart: chrome.extension.getURL('sounds/orc-slo-boo.wav'),
+    '+1': chrome.extension.getURL('sounds/orc-okay.wav'),
+    '-1': chrome.extension.getURL('sounds/orc-death.wav'),
+    laugh: chrome.extension.getURL('sounds/orc-laugh.wav'),
+    hooray: chrome.extension.getURL('sounds/orc-kaboom.wav'),
+    confused: chrome.extension.getURL('sounds/orc-confused.wav'),
+    unreact: chrome.extension.getURL('sounds/orc-spell.wav'),
+  }
+
   class SoundsOfGitHub {
     constructor(volume, soundPack, unreactSound) {
       this.volume = volume || '0.5'
@@ -58,6 +68,9 @@
       }
       if (this.soundPack === 'zelda') {
         return zeldaSounds[type]
+      }
+      if (this.soundPack === 'warcraft-orc') {
+        return warcraftOrcSounds[type]
       }
       return null
     }

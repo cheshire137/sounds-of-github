@@ -2,7 +2,7 @@
 
 ## 0.0.3
 
-- Add Legend of Zelda sound pack.
+- Add Legend of Zelda and Warcraft II orcs sound packs.
 
 ## 0.0.2
 
