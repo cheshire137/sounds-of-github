@@ -3,7 +3,7 @@
   "name": "Sounds of GitHub",
   "short_name": "Sounds of GitHub",
   "description": "Play a sound effect when you leave a reaction on GitHub.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "permissions": [
     "storage", "tabs", "*://*.github.com/*"
   ],
