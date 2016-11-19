@@ -3,7 +3,7 @@
   "name": "Sounds of GitHub",
   "short_name": "Sounds of GitHub",
   "description": "Play a sound effect when you leave a reaction on GitHub.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "permissions": [
     "storage", "tabs", "*://*.github.com/*"
   ],
@@ -40,6 +40,13 @@
     "sounds/dva-hooray.mp3",
     "sounds/dva-confused.mp3",
     "sounds/dva-unreact.mp3",
+    "sounds/zelda-bomb.wav",
+    "sounds/zelda-enemy-die.wav",
+    "sounds/zelda-fanfare.wav",
+    "sounds/zelda-get-heart.wav",
+    "sounds/zelda-rupee.wav",
+    "sounds/zelda-sword-slash.wav",
+    "sounds/zelda-text.wav",
     "icon128.png"
   ]
 }

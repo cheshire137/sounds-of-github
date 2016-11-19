@@ -1,8 +1,12 @@
 # Change Log
 
+## 0.0.3
+
+- Add Legend of Zelda sound pack.
+
 ## 0.0.2
 
-- Fix duplicate Bastion sound.
+- Fixes duplicate Bastion sound.
 
 ## 0.0.1
 

@@ -17,14 +17,16 @@ Choose from Super Mario, Overwatch Bastion, and Overwatch D.Va sound effects!
 
 ## Thanks
 
-The Mario sound effects belong to Nintendo and the Overwatch sound effects belong to
-Blizzard. I claim no ownership of them, I'm just a fan. :heart:
+The Super Mario and Legend of Zelda sound effects belong to Nintendo and the
+Overwatch sound effects belong to Blizzard. I claim no ownership of them, I'm
+just a fan. :heart:
 
 Thanks to and [@shayfrendt](https://github.com/shayfrendt) and [@rewinfrey](https://github.com/rewinfrey) for helping me pick the best :ok_hand: :100: sounds for each reaction.
 
 - [Howler.js](https://github.com/goldfire/howler.js) - audio library
 - [Bulma](http://bulma.io/documentation/elements/form/) - CSS framework
 - milk-syrup for extracted [Bastion](http://milk-syrup.tumblr.com/bastion) and [D.Va](http://milk-syrup.tumblr.com/d.va) sound effects
+- [Legend of Zelda Sound Effects](http://noproblo.dayjo.org/ZeldaSounds/)
 
 ## Screenshots
 

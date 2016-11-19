@@ -29,6 +29,16 @@
     unreact: chrome.extension.getURL('sounds/dva-unreact.mp3'),
   }
 
+  const zeldaSounds = {
+    heart: chrome.extension.getURL('sounds/zelda-get-heart.wav'),
+    '+1': chrome.extension.getURL('sounds/zelda-text.wav'),
+    '-1': chrome.extension.getURL('sounds/zelda-bomb.wav'),
+    laugh: chrome.extension.getURL('sounds/zelda-rupee.wav'),
+    hooray: chrome.extension.getURL('sounds/zelda-fanfare.wav'),
+    confused: chrome.extension.getURL('sounds/zelda-enemy-die.wav'),
+    unreact: chrome.extension.getURL('sounds/zelda-sword-slash.wav'),
+  }
+
   class SoundsOfGitHub {
     constructor(volume, soundPack, unreactSound) {
       this.volume = volume || '0.5'
@@ -45,6 +55,9 @@
       }
       if (this.soundPack === 'overwatch-dva') {
         return dvaSounds[type]
+      }
+      if (this.soundPack === 'zelda') {
+        return zeldaSounds[type]
       }
       return null
     }
