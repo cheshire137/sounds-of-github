@@ -6,6 +6,8 @@
     laugh: chrome.extension.getURL('sounds/mario-stamp.mp3'),
     hooray: chrome.extension.getURL('sounds/mario-gift.mp3'),
     confused: chrome.extension.getURL('sounds/mario-pause.wav'),
+    rocket: chrome.extension.getURL('sounds/mario-gift.mp3'),
+    eyes: chrome.extension.getURL('sounds/mario-pause.wav'),
     unreact: chrome.extension.getURL('sounds/mario-kick.wav'),
   }
 
@@ -16,6 +18,8 @@
     laugh: chrome.extension.getURL('sounds/bastion-laugh.mp3'),
     hooray: chrome.extension.getURL('sounds/bastion-hooray.mp3'),
     confused: chrome.extension.getURL('sounds/bastion-confused.mp3'),
+    rocket: chrome.extension.getURL('sounds/bastion-hooray.mp3'),
+    eyes: chrome.extension.getURL('sounds/bastion-confused.mp3'),
     unreact: chrome.extension.getURL('sounds/bastion-unreact.mp3'),
   }
 
@@ -26,6 +30,8 @@
     laugh: chrome.extension.getURL('sounds/dva-laugh.mp3'),
     hooray: chrome.extension.getURL('sounds/dva-hooray.mp3'),
     confused: chrome.extension.getURL('sounds/dva-confused.mp3'),
+    rocket: chrome.extension.getURL('sounds/dva-hooray.mp3'),
+    eyes: chrome.extension.getURL('sounds/dva-confused.mp3'),
     unreact: chrome.extension.getURL('sounds/dva-unreact.mp3'),
   }
 
@@ -36,6 +42,8 @@
     laugh: chrome.extension.getURL('sounds/zelda-rupee.wav'),
     hooray: chrome.extension.getURL('sounds/zelda-fanfare.wav'),
     confused: chrome.extension.getURL('sounds/zelda-enemy-die.wav'),
+    rocket: chrome.extension.getURL('sounds/zelda-fanfare.wav'),
+    eyes: chrome.extension.getURL('sounds/zelda-enemy-die.wav'),
     unreact: chrome.extension.getURL('sounds/zelda-sword-slash.wav'),
   }
 
@@ -46,6 +54,8 @@
     laugh: chrome.extension.getURL('sounds/orc-laugh.wav'),
     hooray: chrome.extension.getURL('sounds/orc-kaboom.wav'),
     confused: chrome.extension.getURL('sounds/orc-confused.wav'),
+    rocket: chrome.extension.getURL('sounds/orc-kaboom.wav'),
+    eyes: chrome.extension.getURL('sounds/orc-confused.wav'),
     unreact: chrome.extension.getURL('sounds/orc-spell.wav'),
   }
 
@@ -56,6 +66,8 @@
     laugh: chrome.extension.getURL('sounds/alliance-all-right.wav'),
     hooray: chrome.extension.getURL('sounds/alliance-right-o.wav'),
     confused: chrome.extension.getURL('sounds/alliance-auch.wav'),
+    rocket: chrome.extension.getURL('sounds/alliance-right-o.wav'),
+    eyes: chrome.extension.getURL('sounds/alliance-auch.wav'),
     unreact: chrome.extension.getURL('sounds/alliance-invisibility.wav'),
   }
 
